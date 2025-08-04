@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "Hello Thank you good luck to you";
+
+        document.writeln(str.charAt(16),"<br>"); //인덱스 16번째에 값
+        document.writeln(str.indexOf("you"),"<br>"); //첫 번째에 발견된 you의 인덱스
+        document.writeln(str.indexOf("you", 16),"<br>"); //16번째 인덱스에서 발견된 you의 인덱스
+        document.writeln(str.lastIndexOf("you", 16),"<br>"); // 뒤에서부터 첫 번째로 발견된 you의 인덱스
+        document.writeln(str.lastIndexOf("you", 25),"<br>"); // 25번째에서 뒤에서부터 첫 번째로 발견된 you의 인덱스
+        document.writeln("=====================","<br>"); 
+        document.writeln(str.match("luck"),"<br>"); // luck을 찾아서 출력
+        document.writeln(str.match("lake"),"<br>"); //lack 못 찾음(null)
+        document.writeln(str.search("luck"),"<br>"); //luck을 못 찾아서 인덱스 출력
+        document.writeln(str.search("you"),"<br>"); //you 찾아서 인덱스 출력
+        document.writeln(str.substr(21,4),"<br>"); //21번 인덱스에서 4개를 출력
+        document.writeln(str.substring(6,11),"<br>"); //6번 인덱스에서 11번 인덱스 앞에까지 출력
+        document.writeln(str.replace("you","me"),"<br>"); //첫 번째로 발견된 you를 me로 변경
+
+        document.writeln("=====================","<br>"); 
+        document.writeln(str.toLowerCase(),"<br>"); //소문자로 변경
+        document.writeln(str.toUpperCase(),"<br>"); //대문자로 변경
+        document.writeln(str.length,"<br>"); //문자 총 개수
+        document.writeln("=====================","<br>"); 
+        
+        var arr = str.split(" ");
+        document.writeln(arr[0], "<br>");
+        document.writeln(arr[4], "<br>");
+
+        var str2 = "A";
+        var t = str2.charCodeAt(0); //A의 유니코드로 반환
+        document.writeln(t, "<br>");
+        document.writeln(String.fromCharCode(65),"<br>"); //65 유니코드의 문자를 변환
+        document.writeln(String.fromCharCode(72),"<br>"); //72 유니코드의 문자를 변환
+
+        document.write(str.charCodeAt(0),"<br>"); //H의 유니코드로 변환ㄴ
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
