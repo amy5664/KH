@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*비트맵, 벡터 이미지 확대하기*/
+article{
+        width: 200px;
+        height: 200px;
+        background: pink;
+        margin: 100px auto;
+}
+
+@media screen and (max-width: 900px){        
+        article{
+                background: orange;
+        }
+}
+
+@media screen and (max-width: 400px){        
+        article{
+                background: aqua;
+        }
+}
